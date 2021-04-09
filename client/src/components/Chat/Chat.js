@@ -57,7 +57,7 @@ export const Chat = ({ location }) => {
 	const [messages, setMessages] = useState([]);
 	const [moves, setMoves] = useState('start');
 	const [fens, setFens] = useState(moves);
-	const ENDPOINT = 'http://localhost:5000/';
+	const ENDPOINT = 'https://multichess-backend.herokuapp.com/';
 
 	useEffect(() => {
 		const { name, room } = queryString.parse(location.search);
